@@ -1,0 +1,27 @@
+*,*:before,*:after {
+	box-sizing: border-box;
+}
+body, h1, h2, h3, h4, a, button, p, div, ul, ol, li  {
+	padding: 0;
+	margin: 0;
+}
+a, button {
+	text-decoration: none;
+	color: inherit;
+	font: inherit;
+	background: transparent;
+	border: none;
+	cursor: pointer;
+}
+ul, ol, li {
+	list-style: none;
+}
+form, input, button, fieldset, textarea {
+  outline: none;
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+img {
+	display: block;
+}

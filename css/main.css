@@ -1,0 +1,48 @@
+
+* {
+	scroll-behavior: smooth;
+}
+html {
+	font-size: 20px;
+	font-style: normal;
+	font-weight: 400;
+}
+@media screen and (max-width: 574px) {
+	html {
+		font-size: 14px;
+	}
+}
+body {
+	font-family: 'TT Hoves';
+	font-size: 14px;
+	background: transparent;
+
+	overscroll-behavior-y: none;
+	scrollbar-gutter: stable;
+}
+
+.rainbow {
+	width: 20%;
+	aspect-ratio: 1;
+	border-radius: 50%;
+	background-image: linear-gradient(90deg, #0097ff 0, #0091ff 3.33%, #008bff 6.67%, #0084ff 10%, #627cff 13.33%, #8a73ff 16.67%, #a769f4 20%, #bf5ee6 23.33%, #d253d7 26.67%, #e247c6 30%, #ee3cb4 33.33%, #f733a2 36.67%, #fd2d8f 40%, #ff2c7c 43.33%, #ff306a 46.67%, #ff3858 50%, #fb4246 53.33%, #f44d34 56.67%, #ec5721 60%, #e26204 63.33%, #d66b00 66.67%, #c97400 70%, #bb7c00 73.33%, #ac8300 76.67%, #9c8900 80%, #8a8f00 83.33%, #789300 86.67%, #639700 90%, #4b9b00 93.33%, #279e0a 96.67%, #00a029 100%);
+	animation: rotation 1500ms linear infinite
+}
+@keyframes rotation {
+	0% {
+		transform: rotate(0deg);
+	}
+	50% {
+		transform: rotate(180deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
+.hide {
+	/*display: none;*/
+	transform: translateY(50%);
+}
+.trans {
+	transition: transform 0.6s;
+}

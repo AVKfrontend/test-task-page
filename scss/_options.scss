@@ -1,0 +1,56 @@
+$main_color: #fff;
+$site_color: #333;
+$title_color: #bdbdbd;
+$slider_btn_dorder_color: #F2F2F2;
+$slider_btn_hover_color: #F9F9F9;
+$footer_bg_color: #2c2c2c;
+$input_bg_color: #F3F3F3;
+$about_bg_color: #fbfbfb;
+$input_label_color: #8D8D8D;
+$input_star_color: #C30000;
+$copyrigts_color: rgba(200, 200, 200, 0.50);
+
+$header_heigth: 5.1rem;
+
+$title_font_size_mob: 40px;
+$title_font_size_midl: 50px;
+$title_font_size_full: 64px;
+
+%footer_element {
+	width: fit-content;
+	margin: 30px auto 0;
+}
+%ui_font {
+	font-size: 12px;
+	line-height: 100%;
+	letter-spacing: 2.4px;
+	text-transform: uppercase; 
+}
+
+@mixin flex_between {
+	display: flex;
+	justify-content: space-between;
+}
+@mixin flex_center {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+@mixin img_position {
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+@mixin borders ($color) {
+	border-bottom: 1px solid transparent;
+	border-top: 1px solid transparent;
+	transition: border-color 0.4s;
+	&:hover {
+		border-bottom-color: $color;
+		border-top-color: $color;
+	}
+}
